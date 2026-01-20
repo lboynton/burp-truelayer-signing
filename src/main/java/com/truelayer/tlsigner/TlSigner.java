@@ -52,7 +52,7 @@ public class TlSigner implements BurpExtension
     public void initialize(MontoyaApi montoyaApi)
     {
         this.montoyaApi = montoyaApi;
-        montoyaApi.extension().setName("TrueLayer Tl-Signature (Montoya)");
+        montoyaApi.extension().setName("truelayer-signing");
 
         // load persisted settings from Preferences
         this.requireJws = prefs.getBoolean(KEY_REQUIRE, false);
@@ -95,7 +95,7 @@ public class TlSigner implements BurpExtension
             ui.registerSuiteTab("TrueLayer Tl-Signature", panel);
         });
 
-        montoyaApi.logging().logToOutput("TrueLayer Tl-Signature (Montoya) loaded. REQUIRE_JWS=" + this.requireJws);
+        montoyaApi.logging().logToOutput("truelayer-signing loaded. REQUIRE_JWS=" + this.requireJws);
     }
 
     /**
