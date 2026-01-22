@@ -1,6 +1,6 @@
 # burp-truelayer-signing
 
-A Burp Suite extension for signing requests to TrueLayer APIs. No guarantees are made regarding the security or reliability of this extension. Use at your own risk.
+A Burp Suite extension for [signing requests](https://docs.truelayer.com/docs/sign-your-payments-requests) to TrueLayer APIs. No guarantees are made regarding the security or reliability of this extension. Use at your own risk.
 
 To use, you will need to add your key ID and private key in PEM format to the extension settings after loading it into Burp.
 
